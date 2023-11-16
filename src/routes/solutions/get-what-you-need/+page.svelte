@@ -1,6 +1,13 @@
 <script>
 	import { t } from '$lib/translations';
 	import { smoothScroll } from '$lib';
+	import Fa from 'svelte-fa';
+	import {
+		faSquarePollVertical,
+		faScrewdriverWrench,
+		faGlobe,
+		faChartLine
+	} from '@fortawesome/free-solid-svg-icons';
 </script>
 
 <div class="flex flex-col">
@@ -28,30 +35,36 @@
 		<a
 			href="#assetManager"
 			on:click={smoothScroll}
-			class="font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center transition-all duration-300"
+			class="flex gap-2 font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center transition-all duration-300"
 		>
-			{$t('get-what-you-need.assetManagers')}
+			<Fa size="1.5x" class="text-primary" icon={faSquarePollVertical} />{$t(
+				'get-what-you-need.assetManagers'
+			)}
 		</a>
 		<a
 			href="#O&M"
 			on:click={smoothScroll}
-			class="font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center transition-all duration-300"
+			class="flex gap-2 font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center transition-all duration-300"
 		>
-			{$t('get-what-you-need.O&Ms')}
+			<Fa size="1.5x" class="text-primary" icon={faScrewdriverWrench} />{$t(
+				'get-what-you-need.O&Ms'
+			)}
 		</a>
 		<a
 			href="#DNO"
 			on:click={smoothScroll}
-			class="font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center transition-all duration-300"
+			class="flex gap-2 font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center transition-all duration-300"
 		>
-			{$t('get-what-you-need.DNOs')}
+			<Fa size="1.5x" class="text-primary" icon={faGlobe} />{$t('get-what-you-need.DNOs')}
 		</a>
 		<a
 			href="#energyTrader"
 			on:click={smoothScroll}
-			class="font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center"
+			class="flex gap-2 font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center"
 		>
-			{$t('get-what-you-need.energyTraders')}
+			<Fa size="1.5x" class="text-primary" icon={faChartLine} />{$t(
+				'get-what-you-need.energyTraders'
+			)}
 		</a>
 	</div>
 </div>
@@ -78,7 +91,7 @@
 	</div>
 	<div class="flex px-12 md:px-24 lg:px-40">
 		<div class="bg-white shadow lg:w-1/2 px-4 sm:px-8 md:px-14 py-10 border border-border">
-			<div class="pb-4 text-xl text-secondary">{$t('get-what-you-need.solutions')}</div>
+			<div class="pb-4 text-xl text-secondary font-bold">{$t('get-what-you-need.solutions')}</div>
 			<ul class="text-link list-disc pl-4">
 				<li class="text-xl">
 					{$t('get-what-you-need.asset4')}
@@ -116,7 +129,7 @@
 	</div>
 	<div class="flex px-12 md:px-24 lg:px-40">
 		<div class="bg-white shadow lg:w-1/2 px-4 sm:px-8 md:px-14 py-10 border border-border">
-			<div class="pb-4 text-xl text-secondary">{$t('get-what-you-need.solutions')}</div>
+			<div class="pb-4 text-xl text-secondary font-bold">{$t('get-what-you-need.solutions')}</div>
 			<ul class="text-link list-disc pl-4">
 				<li class="text-xl">
 					{$t('get-what-you-need.O&M4')}
@@ -156,7 +169,7 @@
 	</div>
 	<div class="flex px-12 md:px-24 lg:px-40">
 		<div class="bg-white shadow lg:w-1/2 px-4 sm:px-8 md:px-14 py-10 border border-border">
-			<div class="pb-4 text-xl text-secondary">{$t('get-what-you-need.solutions')}</div>
+			<div class="pb-4 text-xl text-secondary font-bold">{$t('get-what-you-need.solutions')}</div>
 			<ul class="text-link list-disc pl-4">
 				<li class="text-xl">
 					{$t('get-what-you-need.DNO3')}
@@ -199,7 +212,7 @@
 	</div>
 	<div class="flex px-12 md:px-24 lg:px-40">
 		<div class="bg-white shadow lg:w-1/2 px-4 sm:px-8 md:px-14 py-10 border border-border">
-			<div class="pb-4 text-xl text-secondary">{$t('get-what-you-need.solutions')}</div>
+			<div class="pb-4 text-xl text-secondary font-bold">{$t('get-what-you-need.solutions')}</div>
 			<ul class="text-link list-disc pl-4">
 				<li class="text-xl">
 					{$t('get-what-you-need.energyTrader3')}

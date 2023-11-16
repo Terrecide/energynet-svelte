@@ -7,13 +7,9 @@ const config = {
 			...theme('colors')
 		}),
 		fontFamily: {
-			/* manrope_bold: ['Manrope-Bold'],
-			manrope_semi_bold: ['Manrope-SemiBold'],
-			manrope_extra_bold: ['Manrope-ExtraBold'],
-			manrope_extra_light: ['Manrope-ExtraLight'],
-			manrope_light: ['Manrope-Light'],
-			manrope_medium: ['Manrope-Medium'],
-			manrope_regular: ['Manrope-Regular'], */
+			neuropol: ['Neuropol'],
+			binaria_regular: ['Binaria-Regular'],
+			binaria_bold: ['Binaria-Bold'],
 		},
 		extend: {
 			colors: {

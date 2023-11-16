@@ -1,0 +1,21 @@
+{
+    "address": "Address",
+    "telephone": "Telephone",
+    "email": "Email",
+    "company": "is registered under brand the of AGROMED Ltd",
+    "header1": "WANT TO KNOW MORE?",
+    "header2": "Contact form:",
+    "description": "Contact us to receive further information or to ask specific questions about our solutions. Our team will be happy to reply and get in touch with you as soon as possible.",
+    "placeholderName": "Name*",
+    "placeholderSurname": "Surname*",
+    "placeholderCompany": "Company*",
+    "placeholderRole": "Role in company",
+    "placeholderPhone": "Phone*",
+    "placeholderEmail": "Email*",
+    "placeholderMsg": "Your message:",
+    "terms": "Yes, I have read Privacy Policy and I agree to the terms and conditions",
+    "submit": "Submit",
+    "required": "Field is required",
+    "emailError": "Field must be valid email",
+    "phoneError": "Field must be valid phone"
+}

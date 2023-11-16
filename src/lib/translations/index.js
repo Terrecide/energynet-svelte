@@ -22,6 +22,16 @@ export const config = {
     },
     {
       locale: 'en',
+      key: 'footer',
+      loader: async () => (await import('./en/footer.json')).default,
+    },
+    {
+      locale: 'bg',
+      key: 'footer',
+      loader: async () => (await import('./bg/footer.json')).default,
+    },
+    {
+      locale: 'en',
       key: 'home',
       routes: ['/'],
       loader: async () => (await import('./en/home.json')).default,

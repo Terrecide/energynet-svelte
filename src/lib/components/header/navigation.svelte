@@ -2,10 +2,12 @@
 	import SideBar from '$lib/components/header/sideBar.svelte';
 	import NavigationItems from '$lib/components/header/navigationItems.svelte';
 	import { page } from '$app/stores';
+	import Fa from 'svelte-fa';
+	import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 	let sideBar;
-	let innerWidth = 0;
-	let scrollY;
+	let innerWidth = null;
+	let scrollY = 0;
 </script>
 
 <svelte:window bind:innerWidth bind:scrollY />
@@ -19,13 +21,13 @@
 	</div>
 	<nav class="main-nav">
 		<ul class="flex items-center gap-6">
-			{#if innerWidth < 900}
+			{#if innerWidth && innerWidth < 900}
 				<li>
 					<span class="flex items-center cursor-pointer" on:click={sideBar.toggleMenu}>
-						<i class="mi-menu icon text-2xl pr-2" />
+						<Fa size="2x" icon={faBars} class="pr-2 text-white" />
 					</span>
 				</li>
-			{:else}
+			{:else if innerWidth}
 				<NavigationItems />
 			{/if}
 		</ul>
@@ -35,7 +37,7 @@
 <SideBar bind:this={sideBar}>
 	<span slot="content">
 		<nav class="main-nav">
-			<ul class="flex flex-col gap-6" on:click={sideBar.toggleMenu}>
+			<ul class="flex flex-col gap-6 mr-8" on:click={sideBar.toggleMenu}>
 				<NavigationItems />
 			</ul>
 		</nav>
