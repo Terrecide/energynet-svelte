@@ -1,6 +1,6 @@
 <script>
 	import { t } from '$lib/translations';
-
+	import { smoothScroll } from '$lib';
 	const link = 'https://kit.svelte.dev';
 
 	let props = [
@@ -31,9 +31,11 @@
 		>
 			<h3 class="!text-3xl !text-white">{$t('home.title')}</h3>
 			<div class="flex justify-center">
-				<button
+				<a
+					href="#footerForm"
+					on:click={smoothScroll}
 					class="mt-10 uppercase text-primary text-center transition-all duration-300 hover:text-white bg-white hover:bg-primary t whitespace-nowrap text-xl my-2.5 py-2 px-7 rounded-full border-radius"
-					>{$t('home.contactNow')}</button
+					>{$t('home.contactNow')}</a
 				>
 			</div>
 		</div>

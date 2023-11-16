@@ -33,12 +33,12 @@
 </script>
 
 {#if showMenu}
-	<div class="bg-overlay" transition:fade={{ duration: 400 }}>
+	<div class="bg-overlay" transition:fade={{ duration: 200 }}>
 		<div
 			class="menu {style}"
 			use:clickOutside
 			on:click_outside={toggleMenu}
-			transition:fly={{ ...flyDirection(direction), duration: 500 }}
+			transition:fly={{ ...flyDirection(direction), duration: 200 }}
 		>
 			<div class="menu-header">
 				<div class="menu-close" on:click={toggleMenu}>

@@ -48,6 +48,7 @@
 </script>
 
 <div
+	id="footerForm"
 	class="flex flex-col w-full gap-10 md:flex-row px-12 sm:px-24 md:px-43 xl:px-64 py-10 text-white"
 >
 	<div class="bg-primary w-full p-12 rounded-xl flex flex-col md:flex-row gap-4">
