@@ -29,10 +29,10 @@
 		<div
 			class="absolute text-center flex flex-col p-8 h-full w-full text-white justify-center xl:h-auto xl:w-auto xl:top-1/2 xl:left-1/2 xl:-translate-y-1/2 xl:-translate-x-1/2"
 		>
-			<h3 class="!text-6xl !text-white">{$t('home.title')}</h3>
+			<h3 class="!text-3xl !text-white">{$t('home.title')}</h3>
 			<div class="flex justify-center">
 				<button
-					class="mt-10 uppercase text-primary text-center transition-all duration-300 hover:text-white bg-white hover:bg-primary t whitespace-nowrap text-xl my-2.5 py-2 px-7 rounded-full border-radius w-1/3"
+					class="mt-10 uppercase text-primary text-center transition-all duration-300 hover:text-white bg-white hover:bg-primary t whitespace-nowrap text-xl my-2.5 py-2 px-7 rounded-full border-radius"
 					>{$t('home.contactNow')}</button
 				>
 			</div>
@@ -43,7 +43,7 @@
 	</div>
 </div>
 <div class="px-12 sm:px-24 md:px-43 xl:px-64 py-10">
-	<h3 class="text-center">{$t('home.title2')}</h3>
+	<h3 class="text-center text-2xl">{$t('home.title2')}</h3>
 </div>
 <div class="flex flex-col gap-10 md:flex-row px-12 sm:px-24 md:px-43 xl:px-64 py-10">
 	<div class="lg:w-1/2">
