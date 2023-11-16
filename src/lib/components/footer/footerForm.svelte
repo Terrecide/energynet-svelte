@@ -49,7 +49,7 @@
 
 <div
 	id="footerForm"
-	class="flex flex-col w-full gap-10 md:flex-row px-12 sm:px-24 md:px-43 xl:px-64 py-10 text-white"
+	class="flex flex-col w-full gap-10 md:flex-row px-6 sm:px-24 md:px-43 xl:px-64 py-10 text-white"
 >
 	<div class="bg-primary w-full p-12 rounded-xl flex flex-col md:flex-row gap-4">
 		<div class="w-full md:w-2/5">
@@ -63,13 +63,15 @@
 			<h1 class="w-full text-white text-xl">{$t('footer.header2')}</h1>
 			<div class="flex flex-row gap-2 w-full">
 				<input
-					class="px-4 py-2 w-1/2 rounded-lg {$errors['name'] && 'border-red-500'}"
+					class="px-4 py-2 w-1/2 rounded-lg {$errors['name'] &&
+						'box-border border border-2 border-red-500'}"
 					type="input"
 					placeholder={$t('footer.placeholderName')}
 					name="name"
 				/>
 				<input
-					class="px-4 py-2 w-1/2 rounded-lg {$errors['surname'] && 'border-red-500'}"
+					class="px-4 py-2 w-1/2 rounded-lg {$errors['surname'] &&
+						'box-border border border-2 border-red-500'}"
 					type="text"
 					placeholder={$t('footer.placeholderSurname')}
 					name="surname"
@@ -89,13 +91,15 @@
 			</div>
 			<div class="flex flex-row gap-2 w-full">
 				<input
-					class="px-4 py-2 w-1/2 rounded-lg {$errors['company'] && 'border-red-500'}"
+					class="px-4 py-2 w-1/2 rounded-lg {$errors['company'] &&
+						'box-border border border-2 border-red-500'}"
 					type="text"
 					placeholder={$t('footer.placeholderCompany')}
 					name="company"
 				/>
 				<input
-					class="px-4 py-2 w-1/2 rounded-lg {$errors['role'] && 'border-red-500'}"
+					class="px-4 py-2 w-1/2 rounded-lg {$errors['role'] &&
+						'box-border border border-2 border-red-500'}"
 					type="text"
 					placeholder={$t('footer.placeholderRole')}
 					name="role"
@@ -115,13 +119,15 @@
 			</div>
 			<div class="flex flex-row gap-2 w-full">
 				<input
-					class="px-4 py-2 w-1/2 rounded-lg {$errors['phone'] && 'border-red-500'}"
+					class="px-4 py-2 w-1/2 rounded-lg {$errors['phone'] &&
+						'box-border border border-2 border-red-500'}"
 					type="phone"
 					placeholder={$t('footer.placeholderPhone')}
 					name="phone"
 				/>
 				<input
-					class="px-4 py-2 w-1/2 rounded-lg {$errors['email'] && 'border-red-500'}"
+					class="px-4 py-2 w-1/2 rounded-lg {$errors['email'] &&
+						'box-border border border-2 border-red-500'}"
 					type="email"
 					placeholder={$t('footer.placeholderEmail')}
 					name="email"
@@ -141,7 +147,8 @@
 			</div>
 			<div class="flex w-full">
 				<input
-					class="px-4 py-2 w-full rounded-lg {$errors['msg'] && 'border-red-500'}"
+					class="px-4 py-2 w-full rounded-lg {$errors['msg'] &&
+						'box-border border border-2 border-red-500'}"
 					type="textfield"
 					placeholder={$t('footer.placeholderMsg')}
 					name="msg"
@@ -152,7 +159,7 @@
 					<Message title={$errors['msg']} />
 				{/if}
 			</div>
-			<div class="flex gap-2 text-white {$errors['terms'] && 'border-red-500'}">
+			<div class="flex gap-2 text-white">
 				<input type="checkbox" bind:checked={fields.terms} name="terms" />
 				<div>{$t('footer.terms')}</div>
 			</div>

@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import { t, setLocale, locales } from '$lib/translations';
+	import { smoothScroll } from '$lib';
 
 	const handleChange = (value) => {
 		document.cookie = `lang=${value} ;`;
@@ -24,6 +25,11 @@
 		href="/solutions/get-what-you-need"
 	>
 		{$t('menu.solutions')}
+	</a>
+</li>
+<li>
+	<a class="main-nav--item" href="#footerForm" on:click={smoothScroll}>
+		{$t('menu.contacts')}
 	</a>
 </li>
 <li>

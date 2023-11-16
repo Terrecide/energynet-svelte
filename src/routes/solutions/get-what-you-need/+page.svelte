@@ -8,22 +8,39 @@
 		faGlobe,
 		faChartLine
 	} from '@fortawesome/free-solid-svg-icons';
+	import Typewriter from 'svelte-typewriter';
 </script>
 
-<!-- <div class="flex flex-col">
+<div class="flex flex-col">
 	<div class="relative">
 		<div class="absolute h-full w-full flex bg-primary/50" />
 		<div
-			class="absolute flex flex-col p-8 h-full w-full text-white justify-center xl:h-auto xl:w-auto xl:top-1/2 xl:left-1/2 xl:-translate-y-1/2 xl:-translate-x-1/2"
+			class="absolute flex flex-row p-8 gap-6 h-full w-full text-white justify-center items-center xl:h-auto xl:w-auto xl:top-1/2 xl:left-1/2 xl:-translate-y-1/2 xl:-translate-x-1/2"
 		>
-			<h3 class="!text-6xl !text-white">{$t('get-what-you-need.header')}</h3>
-			<div class="md:text-3xl pt-2 md:pt-6">e-Mobility stakeholders</div>
+			<img class="hidden sm:flex self-center" id="asset-image" src="/logo-energynet-small.png" />
+			<div>
+				<h3 class="!text-6xl !text-white">{$t('get-what-you-need.header')}</h3>
+				<Typewriter mode="loop" interval={100}>
+					<div class="text-3xl pt-2 md:pt-6">
+						{$t('get-what-you-need.assetManagers')}
+					</div>
+					<div class="text-3xl pt-2 md:pt-6">
+						{$t('get-what-you-need.O&Ms')}
+					</div>
+					<div class="text-3xl pt-2 md:pt-6">
+						{$t('get-what-you-need.DNOs')}
+					</div>
+					<div class="text-3xl pt-2 md:pt-6">
+						{$t('get-what-you-need.energyTraders')}
+					</div>
+				</Typewriter>
+			</div>
 		</div>
 		<div class="landing-image">
 			<img id="landing-image" src="/get-what-you-need/cover.jpg" />
 		</div>
 	</div>
-</div> -->
+</div>
 <div class="flex gap-12 px-12 sm:px-24 md:px-43 xl:px-64 py-20">
 	<div class="w-full lg:w-2/3 xl:w-1/2 flex flex-col mr-6">
 		<h3 class="text-3xl pb-6 text-primary">{$t('get-what-you-need.weMeet')}</h3>
@@ -55,7 +72,7 @@
 			on:click={smoothScroll}
 			class="flex gap-2 font-semibold text-xl text-secondary hover:text-primary whitespace-nowrap shadow-sm my-2.5 mx-5 py-5 px-7 border border-border hover:border-primary bg-white rounded-xl border-radius self-center transition-all duration-300"
 		>
-			<Fa size="1.5x" class="text-primary" icon={faGlobe} />{$t('get-what-you-need.DNOs')}
+			<Fa size="1.5x" class="text-primary" icon={faGlobe} />{$t('get-what-you-need.DNOshort')}
 		</a>
 		<a
 			href="#energyTrader"
