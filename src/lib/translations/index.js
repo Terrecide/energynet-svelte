@@ -57,13 +57,13 @@ export const config = {
     {
       locale: 'en',
       key: 'get-what-you-need',
-      routes: ['/solutions/get-what-you-need'],
+      routes: ['/get-what-you-need'],
       loader: async () => (await import('./en/get-what-you-need.json')).default,
     },
     {
       locale: 'bg',
       key: 'get-what-you-need',
-      routes: ['/solutions/get-what-you-need'],
+      routes: ['/get-what-you-need'],
       loader: async () => (await import('./bg/get-what-you-need.json')).default,
     },
   ],

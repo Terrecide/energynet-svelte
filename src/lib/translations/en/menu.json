@@ -2,5 +2,9 @@
     "home": "Home",
     "whatYouNeed": "Get What You Need",
     "solutions": "Solutions",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "hydro": "Hydro",
+    "solar": "Solar",
+    "wind": "Wind",
+    "grid": "Smart Grid"
   }

@@ -38,7 +38,7 @@
 	<span slot="content">
 		<nav class="main-nav">
 			<ul class="flex flex-col gap-6 mr-8" on:click={sideBar.toggleMenu}>
-				<NavigationItems />
+				<NavigationItems isMobile={true} />
 			</ul>
 		</nav>
 	</span>

@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div class="landing-image">
-			<img id="landing-image" src="/get-what-you-need/cover.jpg" />
+			<img id="landing-image" src="/main.png" />
 		</div>
 	</div>
 </div>
