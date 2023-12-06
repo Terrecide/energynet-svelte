@@ -16,7 +16,7 @@
 <HeaderSection bgSecondImgSrc="/solutions/hydroheader.png" spacerStyle="bg-hydro">
 	<span class="flex flex-col items-center justify-center" slot="header">
 		<img class="max-h-24 white-filter" src="/home/h-em.png" />
-		<div class="pt-4 text-xl">{$t('hydro.slogan')}</div>
+		<div class="pt-4 text-xl font-bold">{$t('hydro.slogan')}</div>
 	</span>
 </HeaderSection>
 <div
@@ -25,7 +25,7 @@
 	<img class="max-h-24" src="/home/h-em.png" />
 	<div>
 		<h1 class="!text-secondary text-4xl mb-4 font-bold">{$t('hydro.header')}</h1>
-		<div class="flex flex-col gap-6 text-base">
+		<div class="flex flex-col gap-6 text-xl">
 			{$t('hydro.headerDesc')}
 		</div>
 	</div>
@@ -77,7 +77,7 @@
 			<div class="text-third text-xl pb-2 font-bold">
 				{$t('hydro.subHeader2')}
 			</div>
-			<div class="text-base">
+			<div class="text-xl">
 				{$t('hydro.content2')}
 			</div>
 			<div class="flex mt-6">
@@ -101,72 +101,72 @@
 <Features imgSrc="/solutions/hydro1.png" header={$t('hydro.header3')}>
 	<span slot="goals">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.goals3-1')}</li>
+			<li class="text-xl">{$t('hydro.goals3-1')}</li>
 		</ul>
 	</span>
 	<span slot="features">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.features3-1')}</li>
-			<li class="text-base">{$t('hydro.features3-2')}</li>
+			<li class="text-xl">{$t('hydro.features3-1')}</li>
+			<li class="text-xl">{$t('hydro.features3-2')}</li>
 		</ul>
 	</span>
 </Features>
 <Features imgOrder="order-2" imgSrc="/solutions/hydro2.png" header={$t('hydro.header4')}>
 	<span slot="goals">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.goals4-1')}</li>
+			<li class="text-xl">{$t('hydro.goals4-1')}</li>
 		</ul>
 	</span>
 	<span slot="features">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.features4-1')}</li>
-			<li class="text-base">{$t('hydro.features4-2')}</li>
+			<li class="text-xl">{$t('hydro.features4-1')}</li>
+			<li class="text-xl">{$t('hydro.features4-2')}</li>
 		</ul>
 	</span>
 </Features>
 <Features imgSrc="/solutions/hydro3.png" header={$t('hydro.header5')}>
 	<span slot="goals">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.goals5-1')}</li>
+			<li class="text-xl">{$t('hydro.goals5-1')}</li>
 		</ul>
 	</span>
 	<span slot="features">
-		<span class="font-bold text-base">{$t('hydro.features5header')}</span>
+		<span class="font-bold text-xl">{$t('hydro.features5header')}</span>
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.features5-1')}</li>
-			<li class="text-base">{$t('hydro.features5-2')}</li>
-			<li class="text-base">{$t('hydro.features5-3')}</li>
-			<li class="text-base">{$t('hydro.features5-4')}</li>
-			<li class="text-base">{$t('hydro.features5-5')}</li>
+			<li class="text-xl">{$t('hydro.features5-1')}</li>
+			<li class="text-xl">{$t('hydro.features5-2')}</li>
+			<li class="text-xl">{$t('hydro.features5-3')}</li>
+			<li class="text-xl">{$t('hydro.features5-4')}</li>
+			<li class="text-xl">{$t('hydro.features5-5')}</li>
 		</ul>
 	</span>
 </Features>
 <Features imgOrder="order-2" imgSrc="/solutions/hydro4.png" header={$t('hydro.header6')}>
 	<span slot="goals">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.goals6-1')}</li>
+			<li class="text-xl">{$t('hydro.goals6-1')}</li>
 		</ul>
 	</span>
 	<span slot="features">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.features6-1')}</li>
-			<li class="text-base">{$t('hydro.features6-2')}</li>
-			<li class="text-base">{$t('hydro.features6-3')}</li>
+			<li class="text-xl">{$t('hydro.features6-1')}</li>
+			<li class="text-xl">{$t('hydro.features6-2')}</li>
+			<li class="text-xl">{$t('hydro.features6-3')}</li>
 		</ul>
 	</span>
 </Features>
 <Features imgSrc="/solutions/hydro5.png" header={$t('hydro.header7')}>
 	<span slot="goals">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.goals7-1')}</li>
+			<li class="text-xl">{$t('hydro.goals7-1')}</li>
 		</ul>
 	</span>
 	<span slot="features">
 		<ul class="list-disc pl-4">
-			<li class="text-base">{$t('hydro.features7-1')}</li>
-			<li class="text-base">{$t('hydro.features7-2')}</li>
-			<li class="text-base">{$t('hydro.features7-3')}</li>
-			<li class="text-base">{$t('hydro.features7-4')}</li>
+			<li class="text-xl">{$t('hydro.features7-1')}</li>
+			<li class="text-xl">{$t('hydro.features7-2')}</li>
+			<li class="text-xl">{$t('hydro.features7-3')}</li>
+			<li class="text-xl">{$t('hydro.features7-4')}</li>
 		</ul>
 	</span>
 </Features>
