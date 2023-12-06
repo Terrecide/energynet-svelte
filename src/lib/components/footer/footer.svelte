@@ -25,7 +25,7 @@
 	</div>
 	<div class="flex text-center justify-center items-end gap-2 flex-col md:flex-row mt-6">
 		<div class="order-2 md:order-1 self-center md:self-end">© Copyright 2023</div>
-		<div class="flex justify-center items-center text-center gap-2 order-1">
+		<div class="flex flex-col sm:flex-row justify-center items-center text-center gap-2 order-1">
 			<img class="h-8" src="/logo-energynet.png" />
 			<div class="whitespace-nowrap self-end">{$t('footer.company')}</div>
 		</div>

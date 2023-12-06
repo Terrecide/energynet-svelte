@@ -12,6 +12,16 @@ export const config = {
   loaders: [
     {
       locale: 'en',
+      key: 'shared',
+      loader: async () => (await import('./en/shared.json')).default,
+    },
+    {
+      locale: 'bg',
+      key: 'shared',
+      loader: async () => (await import('./bg/shared.json')).default,
+    },
+    {
+      locale: 'en',
       key: 'menu',
       loader: async () => (await import('./en/menu.json')).default,
     },
@@ -65,6 +75,18 @@ export const config = {
       key: 'get-what-you-need',
       routes: ['/get-what-you-need'],
       loader: async () => (await import('./bg/get-what-you-need.json')).default,
+    },
+    {
+      locale: 'en',
+      key: 'hydro',
+      routes: ['/solutions/hydro'],
+      loader: async () => (await import('./en/hydro.json')).default,
+    },
+    {
+      locale: 'bg',
+      key: 'hydro',
+      routes: ['/solutions/hydro'],
+      loader: async () => (await import('./bg/hydro.json')).default,
     },
   ],
 };

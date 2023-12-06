@@ -21,7 +21,8 @@ const config = {
 				link2: '#7accc7',
 				border: "#D8D8D8",
 				gray: '#f9f9f9',
-				cyan: "#7accc7"
+				cyan: "#7accc7",
+				hydro: "#0032d0"
 			}
 		}
 	},

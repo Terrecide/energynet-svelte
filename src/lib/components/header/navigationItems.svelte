@@ -29,7 +29,7 @@
 		{$t('menu.whatYouNeed')}
 	</a>
 </li>
-<!-- <li class="relative" on:mouseenter={toggleMenu}>
+<li class="relative" on:mouseenter={toggleMenu}>
 	{#if !isMobile}
 		<button class:active={$page.url.pathname === '/solutions/'} class="main-nav--item flex">
 			{$t('menu.solutions')}<Fa size="1x" icon={faCaretDown} class="pl-2 text-white" />
@@ -48,7 +48,7 @@
 						{$t('menu.hydro')}
 					</a>
 				</li>
-				<li>
+				<!-- 				<li>
 					<a
 						class:active={$page.url.pathname === '/solutions/solar'}
 						class="main-nav--item !text-primary"
@@ -74,7 +74,7 @@
 					>
 						{$t('menu.grid')}
 					</a>
-				</li>
+				</li> -->
 			</ul>
 		{/if}
 	{:else}
@@ -87,7 +87,7 @@
 				{$t('menu.hydro')}
 			</a>
 		</li>
-		<li>
+		<!-- 		<li>
 			<a
 				class:active={$page.url.pathname === '/solutions/solar'}
 				class="main-nav--item !text-primary"
@@ -113,9 +113,9 @@
 			>
 				{$t('menu.grid')}
 			</a>
-		</li>
+		</li> -->
 	{/if}
-</li> -->
+</li>
 <li>
 	<a class="main-nav--item" href="#footerForm" on:click={smoothScroll}>
 		{$t('menu.contacts')}
