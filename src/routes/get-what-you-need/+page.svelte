@@ -38,6 +38,7 @@
 		</div>
 		<div class="landing-image">
 			<img id="landing-image" src="/main.png" />
+			
 		</div>
 	</div>
 </div>
