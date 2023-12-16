@@ -36,7 +36,7 @@
 		</button>
 		{#if isExpanded}
 			<ul
-				class="flex flex-col items-center gap-4 absolute text-white bg-white shadow rounded-lg px-2 py-4 !w-44 -left-1/2"
+				class="flex flex-col items-center gap-4 absolute text-white bg-white shadow rounded-lg px-2 py-4 !min-w-44 left-1/2 -translate-x-1/2"
 				transition:slide
 			>
 				<li>
@@ -48,15 +48,6 @@
 						{$t('menu.hydro')}
 					</a>
 				</li>
-				<!-- 				<li>
-					<a
-						class:active={$page.url.pathname === '/solutions/solar'}
-						class="main-nav--item !text-primary"
-						href="/solutions/solar"
-					>
-						{$t('menu.solar')}
-					</a>
-				</li>
 				<li>
 					<a
 						class:active={$page.url.pathname === '/solutions/wind'}
@@ -66,6 +57,16 @@
 						{$t('menu.wind')}
 					</a>
 				</li>
+				<!-- 				<li>
+					<a
+						class:active={$page.url.pathname === '/solutions/solar'}
+						class="main-nav--item !text-primary"
+						href="/solutions/solar"
+					>
+						{$t('menu.solar')}
+					</a>
+				</li>
+
 				<li>
 					<a
 						class:active={$page.url.pathname === '/solutions/grid'}
@@ -87,15 +88,6 @@
 				{$t('menu.hydro')}
 			</a>
 		</li>
-		<!-- 		<li>
-			<a
-				class:active={$page.url.pathname === '/solutions/solar'}
-				class="main-nav--item !text-primary"
-				href="/solutions/solar"
-			>
-				{$t('menu.solar')}
-			</a>
-		</li>
 		<li>
 			<a
 				class:active={$page.url.pathname === '/solutions/wind'}
@@ -105,6 +97,16 @@
 				{$t('menu.wind')}
 			</a>
 		</li>
+		<!-- 		<li>
+			<a
+				class:active={$page.url.pathname === '/solutions/solar'}
+				class="main-nav--item !text-primary"
+				href="/solutions/solar"
+			>
+				{$t('menu.solar')}
+			</a>
+		</li>
+
 		<li>
 			<a
 				class:active={$page.url.pathname === '/solutions/grid'}
@@ -131,7 +133,7 @@
 
 <style lang="postcss">
 	.main-nav--item {
-		@apply text-white text-xl;
+		@apply text-white text-xl whitespace-nowrap;
 	}
 	.active {
 		@apply text-cyan;

@@ -88,6 +88,18 @@ export const config = {
       routes: ['/solutions/hydro'],
       loader: async () => (await import('./bg/hydro.json')).default,
     },
+    {
+      locale: 'en',
+      key: 'wind',
+      routes: ['/solutions/wind'],
+      loader: async () => (await import('./en/wind.json')).default,
+    },
+    {
+      locale: 'bg',
+      key: 'wind',
+      routes: ['/solutions/wind'],
+      loader: async () => (await import('./bg/wind.json')).default,
+    },
   ],
 };
 
