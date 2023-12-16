@@ -36,7 +36,7 @@
 		</button>
 		{#if isExpanded}
 			<ul
-				class="flex flex-col items-center gap-4 absolute text-white bg-white shadow rounded-lg px-2 py-4 !min-w-44 left-1/2 -translate-x-1/2"
+				class="flex flex-col items-center gap-4 absolute text-white bg-white shadow rounded-lg p-6 py-4 left-1/2 -translate-x-1/2"
 				transition:slide
 			>
 				<li>
