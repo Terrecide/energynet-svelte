@@ -100,6 +100,18 @@ export const config = {
       routes: ['/solutions/wind'],
       loader: async () => (await import('./bg/wind.json')).default,
     },
+    {
+      locale: 'en',
+      key: 'grid',
+      routes: ['/solutions/grid'],
+      loader: async () => (await import('./en/grid.json')).default,
+    },
+    {
+      locale: 'bg',
+      key: 'grid',
+      routes: ['/solutions/grid'],
+      loader: async () => (await import('./bg/grid.json')).default,
+    },
   ],
 };
 

@@ -57,6 +57,15 @@
 						{$t('menu.wind')}
 					</a>
 				</li>
+				<li>
+					<a
+						class:active={$page.url.pathname === '/solutions/grid'}
+						class="main-nav--item !text-primary"
+						href="/solutions/grid"
+					>
+						{$t('menu.grid')}
+					</a>
+				</li>
 				<!-- 				<li>
 					<a
 						class:active={$page.url.pathname === '/solutions/solar'}
@@ -67,15 +76,7 @@
 					</a>
 				</li>
 
-				<li>
-					<a
-						class:active={$page.url.pathname === '/solutions/grid'}
-						class="main-nav--item !text-primary"
-						href="/solutions/grid"
-					>
-						{$t('menu.grid')}
-					</a>
-				</li> -->
+				 -->
 			</ul>
 		{/if}
 	{:else}
@@ -97,6 +98,15 @@
 				{$t('menu.wind')}
 			</a>
 		</li>
+		<li>
+			<a
+				class:active={$page.url.pathname === '/solutions/grid'}
+				class="main-nav--item !text-primary"
+				href="/solutions/grid"
+			>
+				{$t('menu.grid')}
+			</a>
+		</li>
 		<!-- 		<li>
 			<a
 				class:active={$page.url.pathname === '/solutions/solar'}
@@ -107,15 +117,7 @@
 			</a>
 		</li>
 
-		<li>
-			<a
-				class:active={$page.url.pathname === '/solutions/grid'}
-				class="main-nav--item !text-primary"
-				href="/solutions/grid"
-			>
-				{$t('menu.grid')}
-			</a>
-		</li> -->
+		 -->
 	{/if}
 </li>
 <li>

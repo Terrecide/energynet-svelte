@@ -20,7 +20,7 @@
 	</span>
 </HeaderSection>
 <div
-	class="flex flex-col md:flex-row justify-center items-center m-auto px-10 sm:px-24 md:px-43 xl:px-64 gap-12"
+	class="flex flex-col md:flex-row justify-center items-center m-auto px-10 sm:px-24 md:px-43 xl:px-64 2xl:px-96 gap-12"
 >
 	<img class="max-h-24" src="/home/h-em.png" />
 	<div>
