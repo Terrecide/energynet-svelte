@@ -22,7 +22,9 @@ const config = {
 				border: "#D8D8D8",
 				gray: '#f9f9f9',
 				cyan: "#7accc7",
-				hydro: "#0032d0"
+				hydro: "#0032d0",
+				divide: "#D8D8D8",
+				gray2: "#707070"
 			}
 		}
 	},

@@ -112,6 +112,18 @@ export const config = {
       routes: ['/solutions/grid'],
       loader: async () => (await import('./bg/grid.json')).default,
     },
+    {
+      locale: 'en',
+      key: 'solar',
+      routes: ['/solutions/solar'],
+      loader: async () => (await import('./en/solar.json')).default,
+    },
+    {
+      locale: 'bg',
+      key: 'solar',
+      routes: ['/solutions/solar'],
+      loader: async () => (await import('./bg/solar.json')).default,
+    },
   ],
 };
 

@@ -60,7 +60,7 @@
 <div class="flex flex-col gap-6 justify-around py-12 px-12 lg:px-24 xl:px-40 text-center bg-gray">
 	<h1 class="text-primary text-4xl mb-4 font-bold">{$t('grid.introHeader2')}</h1>
 	<div class="flex flex-col xl:flex-row gap-12 xl:gap-24 py-10">
-		<div class="flex flex-col bg-white shadow p-8 text-xl divide-y divide-gray-300 w-full">
+		<div class="flex flex-col bg-white shadow p-8 text-xl divide-y divide-divide w-full">
 			<div class="flex flex-col text-center gap-2 pb-6">
 				<img
 					class="h-30 h-full w-full w-52 self-center"
@@ -79,7 +79,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="flex flex-col bg-white shadow p-8 text-xl divide-y divide-gray-300 w-full">
+		<div class="flex flex-col bg-white shadow p-8 text-xl divide-y divide-divide w-full">
 			<div class="flex flex-col text-center gap-2 pb-6">
 				<img
 					class="h-30 h-full w-full w-52 self-center"
@@ -98,7 +98,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="flex flex-col bg-white shadow p-8 text-xl divide-y divide-gray-300 w-full">
+		<div class="flex flex-col bg-white shadow p-8 text-xl divide-y divide-divide w-full">
 			<div class="flex flex-col text-center gap-2 pb-6">
 				<img
 					class="h-30 h-full w-full w-52 self-center"
